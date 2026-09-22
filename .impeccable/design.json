@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-22T15:46:28+00:00",
+  "title": "Design System: OneVoice27 Portugal",
+  "extensions": {
+    "colorMeta": {
+      "night-0": {
+        "role": "neutral",
+        "displayName": "Midnight",
+        "canonical": "oklch(0.14 0.05 288)",
+        "tonalRamp": [
+          "oklch(0.15 0.024 288)",
+          "oklch(0.26 0.030 288)",
+          "oklch(0.38 0.037 288)",
+          "oklch(0.49 0.044 288)",
+          "oklch(0.61 0.050 288)",
+          "oklch(0.72 0.043 288)",
+          "oklch(0.84 0.036 288)",
+          "oklch(0.95 0.030 288)"
+        ]
+      },
+      "night-1": {
+        "role": "neutral",
+        "displayName": "Deep Indigo",
+        "canonical": "oklch(0.18 0.075 287)",
+        "tonalRamp": [
+          "oklch(0.15 0.036 287)",
+          "oklch(0.26 0.046 287)",
+          "oklch(0.38 0.056 287)",
+          "oklch(0.49 0.066 287)",
+          "oklch(0.61 0.074 287)",
+          "oklch(0.72 0.064 287)",
+          "oklch(0.84 0.054 287)",
+          "oklch(0.95 0.044 287)"
+        ]
+      },
+      "night-2": {
+        "role": "neutral",
+        "displayName": "Raised Indigo",
+        "canonical": "oklch(0.225 0.085 287)",
+        "tonalRamp": [
+          "oklch(0.15 0.040 287)",
+          "oklch(0.26 0.052 287)",
+          "oklch(0.38 0.063 287)",
+          "oklch(0.49 0.074 287)",
+          "oklch(0.61 0.084 287)",
+          "oklch(0.72 0.073 287)",
+          "oklch(0.84 0.062 287)",
+          "oklch(0.95 0.050 287)"
+        ]
+      },
+      "night-3": {
+        "role": "neutral",
+        "displayName": "Tip Indigo",
+        "canonical": "oklch(0.28 0.09 288)",
+        "tonalRamp": [
+          "oklch(0.15 0.043 288)",
+          "oklch(0.26 0.055 288)",
+          "oklch(0.38 0.067 288)",
+          "oklch(0.49 0.079 288)",
+          "oklch(0.61 0.089 288)",
+          "oklch(0.72 0.077 288)",
+          "oklch(0.84 0.065 288)",
+          "oklch(0.95 0.053 288)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Thread",
+        "canonical": "oklch(0.55 0.08 290 / 0.28)",
+        "tonalRamp": [
+          "oklch(0.15 0.038 290)",
+          "oklch(0.26 0.049 290)",
+          "oklch(0.38 0.059 290)",
+          "oklch(0.49 0.070 290)",
+          "oklch(0.61 0.079 290)",
+          "oklch(0.72 0.069 290)",
+          "oklch(0.84 0.058 290)",
+          "oklch(0.95 0.047 290)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Thread (strong)",
+        "canonical": "oklch(0.7 0.07 295 / 0.5)",
+        "tonalRamp": [
+          "oklch(0.15 0.033 295)",
+          "oklch(0.26 0.043 295)",
+          "oklch(0.38 0.052 295)",
+          "oklch(0.49 0.061 295)",
+          "oklch(0.61 0.069 295)",
+          "oklch(0.72 0.060 295)",
+          "oklch(0.84 0.051 295)",
+          "oklch(0.95 0.041 295)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Starlight",
+        "canonical": "oklch(0.97 0.008 310)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 310)",
+          "oklch(0.26 0.005 310)",
+          "oklch(0.38 0.006 310)",
+          "oklch(0.49 0.007 310)",
+          "oklch(0.61 0.008 310)",
+          "oklch(0.72 0.007 310)",
+          "oklch(0.84 0.006 310)",
+          "oklch(0.95 0.005 310)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Moonlit",
+        "canonical": "oklch(0.87 0.02 305)",
+        "tonalRamp": [
+          "oklch(0.15 0.010 305)",
+          "oklch(0.26 0.012 305)",
+          "oklch(0.38 0.015 305)",
+          "oklch(0.49 0.018 305)",
+          "oklch(0.61 0.020 305)",
+          "oklch(0.72 0.017 305)",
+          "oklch(0.84 0.014 305)",
+          "oklch(0.95 0.012 305)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Haze",
+        "canonical": "oklch(0.72 0.035 298)",
+        "tonalRamp": [
+          "oklch(0.15 0.017 298)",
+          "oklch(0.26 0.021 298)",
+          "oklch(0.38 0.026 298)",
+          "oklch(0.49 0.031 298)",
+          "oklch(0.61 0.035 298)",
+          "oklch(0.72 0.030 298)",
+          "oklch(0.84 0.025 298)",
+          "oklch(0.95 0.021 298)"
+        ]
+      },
+      "pink": {
+        "role": "primary",
+        "displayName": "Candle Pink",
+        "canonical": "oklch(0.81 0.085 345)",
+        "tonalRamp": [
+          "oklch(0.15 0.040 345)",
+          "oklch(0.26 0.052 345)",
+          "oklch(0.38 0.063 345)",
+          "oklch(0.49 0.074 345)",
+          "oklch(0.61 0.084 345)",
+          "oklch(0.72 0.073 345)",
+          "oklch(0.84 0.062 345)",
+          "oklch(0.95 0.050 345)"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "Harbour Teal",
+        "canonical": "oklch(0.79 0.07 200)",
+        "tonalRamp": [
+          "oklch(0.15 0.033 200)",
+          "oklch(0.26 0.043 200)",
+          "oklch(0.38 0.052 200)",
+          "oklch(0.49 0.061 200)",
+          "oklch(0.61 0.069 200)",
+          "oklch(0.72 0.060 200)",
+          "oklch(0.84 0.051 200)",
+          "oklch(0.95 0.041 200)"
+        ]
+      },
+      "lilac": {
+        "role": "tertiary",
+        "displayName": "Dusk Lilac",
+        "canonical": "oklch(0.76 0.1 295)",
+        "tonalRamp": [
+          "oklch(0.15 0.048 295)",
+          "oklch(0.26 0.061 295)",
+          "oklch(0.38 0.074 295)",
+          "oklch(0.49 0.088 295)",
+          "oklch(0.61 0.099 295)",
+          "oklch(0.72 0.086 295)",
+          "oklch(0.84 0.072 295)",
+          "oklch(0.95 0.059 295)"
+        ]
+      },
+      "danger": {
+        "role": "error",
+        "displayName": "Ember",
+        "canonical": "oklch(0.8 0.11 22)",
+        "tonalRamp": [
+          "oklch(0.15 0.052 22)",
+          "oklch(0.26 0.067 22)",
+          "oklch(0.38 0.082 22)",
+          "oklch(0.49 0.096 22)",
+          "oklch(0.61 0.109 22)",
+          "oklch(0.72 0.094 22)",
+          "oklch(0.84 0.080 22)",
+          "oklch(0.95 0.065 22)"
+        ]
+      },
+      "surface-plum": {
+        "role": "primary",
+        "displayName": "Button Plum",
+        "canonical": "oklch(0.42 0.11 335)",
+        "tonalRamp": [
+          "oklch(0.15 0.052 335)",
+          "oklch(0.26 0.067 335)",
+          "oklch(0.38 0.082 335)",
+          "oklch(0.49 0.096 335)",
+          "oklch(0.61 0.109 335)",
+          "oklch(0.72 0.094 335)",
+          "oklch(0.84 0.080 335)",
+          "oklch(0.95 0.065 335)"
+        ]
+      },
+      "surface-indigo": {
+        "role": "primary",
+        "displayName": "Button Indigo",
+        "canonical": "oklch(0.46 0.13 275)",
+        "tonalRamp": [
+          "oklch(0.15 0.062 275)",
+          "oklch(0.26 0.079 275)",
+          "oklch(0.38 0.096 275)",
+          "oklch(0.49 0.114 275)",
+          "oklch(0.61 0.129 275)",
+          "oklch(0.72 0.112 275)",
+          "oklch(0.84 0.094 275)",
+          "oklch(0.95 0.077 275)"
+        ]
+      },
+      "surface-sea": {
+        "role": "primary",
+        "displayName": "Button Sea",
+        "canonical": "oklch(0.5 0.07 210)",
+        "tonalRamp": [
+          "oklch(0.15 0.033 210)",
+          "oklch(0.26 0.043 210)",
+          "oklch(0.38 0.052 210)",
+          "oklch(0.49 0.061 210)",
+          "oklch(0.61 0.069 210)",
+          "oklch(0.72 0.060 210)",
+          "oklch(0.84 0.051 210)",
+          "oklch(0.95 0.041 210)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; second line in Candle Pink."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, max 18ch."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step role names and fieldset legends."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs, 52 to 62ch."
+      },
+      "field-label": {
+        "displayName": "Field Label",
+        "purpose": "Full-sentence form questions in Starlight."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase, three words or fewer: buttons, nav, step phases."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-rest",
+        "value": "0 0 0 1px oklch(0.9 0.02 280 / 0.3) inset, 0 8px 20px -8px oklch(0.06 0.03 290 / 0.8)",
+        "purpose": "Primary button at rest."
+      },
+      {
+        "name": "button-lifted",
+        "value": "0 0 0 1px oklch(0.92 0.03 300 / 0.5) inset, 0 12px 26px -10px oklch(0.06 0.03 290 / 0.9)",
+        "purpose": "Primary button hover/focus with translateY(-2px)."
+      },
+      {
+        "name": "dropdown",
+        "value": "0 10px 16px -10px oklch(0.05 0.03 290 / 0.9)",
+        "purpose": "Church combobox list."
+      },
+      {
+        "name": "light-halo",
+        "value": "0 0 24px 4px color-mix(in oklch, var(--tone) 45%, transparent)",
+        "purpose": "Path step lights only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "All state transitions (ease-out-quint)."
+      },
+      {
+        "name": "beam",
+        "value": "3s linear infinite",
+        "purpose": "Orbiting light on primary buttons (@property --beam 0 to 360deg)."
+      },
+      {
+        "name": "twinkle",
+        "value": "3s to 6s ease-in-out infinite, staggered per church",
+        "purpose": "Map light halos."
+      },
+      {
+        "name": "reveal",
+        "value": "grid-template-rows 0.45s",
+        "purpose": "Conditional follow-up questions."
+      },
+      {
+        "name": "kindle",
+        "value": "1.6s",
+        "purpose": "Confirmation light scaling in after a successful submit."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "header-compact",
+        "value": "640px"
+      },
+      {
+        "name": "tabs-stack",
+        "value": "560px"
+      },
+      {
+        "name": "hero-stack",
+        "value": "860px"
+      },
+      {
+        "name": "rail-collapse",
+        "value": "900px"
+      },
+      {
+        "name": "path-vertical",
+        "value": "960px"
+      },
+      {
+        "name": "submit-roomy",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (orbiting beam)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action per view: gradient pill, conic light beam orbiting a 1.5px ring, starfield trailing it.",
+      "html": "<button class=\"ds-btn-primary\">Enviar candidatura</button>",
+      "css": ":host{--night-0:oklch(0.14 0.05 288);--ink:oklch(0.97 0.008 310);--ink-2:oklch(0.87 0.02 305);--line-strong:oklch(0.7 0.07 295 / 0.5);--pink:oklch(0.81 0.085 345);--teal:oklch(0.79 0.07 200);--ease:cubic-bezier(0.22,1,0.36,1)}@property --beam{syntax:'<angle>';inherits:false;initial-value:0deg}@keyframes ds-beam{to{--beam:360deg}}.ds-btn-primary{position:relative;isolation:isolate;overflow:hidden;min-height:52px;padding:0 28px;border:0;border-radius:999px;font:700 .82rem/1 Figtree,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);cursor:pointer;background:radial-gradient(circle at 20% 12%,oklch(.95 .03 340/.16),transparent 34%),linear-gradient(125deg,oklch(.42 .11 335),oklch(.46 .13 275) 50%,oklch(.5 .07 210));box-shadow:0 0 0 1px oklch(.9 .02 280/.3) inset,0 8px 20px -8px oklch(.06 .03 290/.8);transition:transform .32s var(--ease),box-shadow .32s}.ds-btn-primary::before,.ds-btn-primary::after{content:'';position:absolute;z-index:-1;border-radius:inherit;pointer-events:none;animation:ds-beam 3s linear infinite}.ds-btn-primary::before{inset:0;padding:1.5px;background:conic-gradient(from var(--beam),transparent 0deg 238deg,oklch(.84 .05 200) 270deg,oklch(.94 .03 340) 294deg,oklch(.99 .005 310) 304deg,oklch(.88 .06 345) 316deg,transparent 348deg 360deg);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}.ds-btn-primary::after{inset:1px;opacity:.42;background-image:radial-gradient(circle,oklch(.97 .008 310/.72) .8px,transparent 1.1px);background-size:7px 7px;mask-image:conic-gradient(from var(--beam),transparent 0deg 242deg,#000 286deg 316deg,transparent 356deg 360deg);transition:opacity .32s}.ds-btn-primary:hover,.ds-btn-primary:focus-visible{transform:translateY(-2px);box-shadow:0 0 0 1px oklch(.92 .03 300/.5) inset,0 12px 26px -10px oklch(.06 .03 290/.9)}.ds-btn-primary:hover::after,.ds-btn-primary:focus-visible::after{opacity:.62}.ds-btn-primary:focus-visible{outline:2px solid var(--teal);outline-offset:3px}@media (prefers-reduced-motion:reduce){.ds-btn-primary,.ds-btn-primary::before,.ds-btn-primary::after{animation:none;transition:none}}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary and external links.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Projeto mundial ↗</a>",
+      "css": ":host{--night-0:oklch(0.14 0.05 288);--ink:oklch(0.97 0.008 310);--ink-2:oklch(0.87 0.02 305);--line-strong:oklch(0.7 0.07 295 / 0.5);--pink:oklch(0.81 0.085 345);--teal:oklch(0.79 0.07 200);--ease:cubic-bezier(0.22,1,0.36,1)}.ds-btn-ghost{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border-radius:999px;font:700 .82rem/1 Figtree,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--ink);box-shadow:0 0 0 1px var(--line-strong) inset;transition:background-color .3s}.ds-btn-ghost:hover{background:oklch(.3 .08 290/.5)}.ds-btn-ghost:focus-visible{outline:2px solid var(--teal);outline-offset:3px}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio/checkbox pill; fills with the role tone when selected.",
+      "html": "<label class=\"ds-chip\"><input type=\"checkbox\" checked><span>WhatsApp</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Email</span></label>",
+      "css": ":host{--night-0:oklch(0.14 0.05 288);--ink:oklch(0.97 0.008 310);--ink-2:oklch(0.87 0.02 305);--line-strong:oklch(0.7 0.07 295 / 0.5);--pink:oklch(0.81 0.085 345);--teal:oklch(0.79 0.07 200);--ease:cubic-bezier(0.22,1,0.36,1)}.ds-chip{position:relative;display:inline-flex;margin:0 8px 8px 0;cursor:pointer}.ds-chip input{position:absolute;inset:0;opacity:0;margin:0}.ds-chip span{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:8px 16px;border-radius:999px;border:1px solid var(--line-strong);font:.92rem/1.3 'Noto Sans',system-ui,sans-serif;color:var(--ink-2);transition:background-color .25s,border-color .25s,color .25s}.ds-chip:hover span{color:var(--ink)}.ds-chip input:checked+span{background:var(--teal);border-color:var(--teal);color:var(--night-0);font-weight:600}.ds-chip input:checked+span::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--night-0)}.ds-chip input:focus-visible+span{outline:2px solid var(--ink);outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Question label in Starlight, dark field, tone focus ring.",
+      "html": "<label class=\"ds-field\"><span>Nome completo <b>*</b></span><input type=\"text\"></label>",
+      "css": ":host{--night-0:oklch(0.14 0.05 288);--ink:oklch(0.97 0.008 310);--ink-2:oklch(0.87 0.02 305);--line-strong:oklch(0.7 0.07 295 / 0.5);--pink:oklch(0.81 0.085 345);--teal:oklch(0.79 0.07 200);--ease:cubic-bezier(0.22,1,0.36,1)}.ds-field{display:grid;gap:8px;font:600 .95rem/1.4 'Noto Sans',system-ui,sans-serif;color:var(--ink)}.ds-field b{color:var(--pink);font-weight:600}.ds-field input{min-height:50px;padding:12px 16px;font:400 1rem/1.4 'Noto Sans',system-ui,sans-serif;color:var(--ink);background:var(--night-0);border:1px solid var(--line-strong);border-radius:12px;transition:border-color .25s,box-shadow .25s}.ds-field input:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px color-mix(in oklch,var(--teal) 30%,transparent)}"
+    },
+    {
+      "name": "Role Tabs",
+      "kind": "nav",
+      "refersTo": "tab-selected",
+      "description": "Segmented pill track; the selected tab takes its role tone.",
+      "html": "<div class=\"ds-tabs\"><button aria-selected=\"true\">Instrutor</button><button>Criador de conteúdo</button><button>Igreja aderente</button></div>",
+      "css": ":host{--night-0:oklch(0.14 0.05 288);--ink:oklch(0.97 0.008 310);--ink-2:oklch(0.87 0.02 305);--line-strong:oklch(0.7 0.07 295 / 0.5);--pink:oklch(0.81 0.085 345);--teal:oklch(0.79 0.07 200);--ease:cubic-bezier(0.22,1,0.36,1)}.ds-tabs{display:inline-flex;gap:6px;padding:6px;border:1px solid oklch(.55 .08 290/.28);border-radius:999px;background:var(--night-0)}.ds-tabs button{border:0;min-height:44px;padding:0 20px;border-radius:999px;font:700 .9rem/1 Figtree,system-ui,sans-serif;color:oklch(.72 .035 298);background:transparent;cursor:pointer;transition:color .3s,background-color .3s}.ds-tabs button:hover{color:var(--ink)}.ds-tabs button[aria-selected=true]{background:var(--teal);color:var(--night-0)}.ds-tabs button:focus-visible{outline:2px solid var(--teal);outline-offset:3px}"
+    },
+    {
+      "name": "Header CTA",
+      "kind": "nav",
+      "refersTo": "nav-cta",
+      "description": "Pink pill in the skewed sticky header.",
+      "html": "<a class=\"ds-nav-cta\" href=\"#\">Inscrever</a>",
+      "css": ":host{--night-0:oklch(0.14 0.05 288);--ink:oklch(0.97 0.008 310);--ink-2:oklch(0.87 0.02 305);--line-strong:oklch(0.7 0.07 295 / 0.5);--pink:oklch(0.81 0.085 345);--teal:oklch(0.79 0.07 200);--ease:cubic-bezier(0.22,1,0.36,1)}.ds-nav-cta{display:inline-block;padding:10px 14px;border-radius:999px;font:700 .75rem/1 Figtree,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--night-0);background:var(--pink);transition:background-color .3s}.ds-nav-cta:hover{background:var(--ink)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Uma luz por igreja (one light per church)",
+    "overview": "The site is Portugal at night, seen from above: a deep indigo sky with one small light for each Adventist church, 120 of them from Bragança to Faro and out to the Açores and Madeira. Everything comes from that picture. The hero map is literal: one light per church, with real coordinates. The steps of \"O caminho\" are lights joined by a thread, and a successful signup ends with a new light kindling. The identity carries over from onevoice27.org and stays faithful to it: the same indigo night, the same pink/teal/lilac glow, Figtree over Noto Sans, the slanted edges, and the pill button with a beam of light orbiting its border. It is a local chapter of a worldwide movement, not a rebrand.\n\nThe audience is church members on a phone after the Sabbath service or at home in the evening, not designers. The pages are long, calm and full of room to breathe: one idea per viewport on the landing sections, then a dense but orderly form. The forms are the product. Everything above them exists to get a person to pick one of three roles and finish it.\n\nThis system rejects the generic SaaS landing page: no hero-metric tiles, no grids of identical icon cards, no eyebrow chip above the headline, no glassmorphism, no gradient text. It also rejects \"churchy\" clichés such as stained-glass palettes, parchment and ornamental serifs. The mood is quiet devotion lit from within, not a tech launch and not a hymnal.",
+    "keyCharacteristics": [
+      "Dark theme only: a night-indigo base (`night-0`), with sections set apart by lighter indigo layers and slanted `clip-path` edges.",
+      "Three tones (pink, teal, lilac), each tied to one role, never used at random.",
+      "Heavy, tight Figtree display type against a readable Noto Sans body.",
+      "Glow is kept for things that are literally lights: map dots, path steps, the confirmation light and the button beam.",
+      "Pills everywhere you can interact: buttons, chips, tabs, the header CTA.",
+      "All copy is in European Portuguese (pt-PT), with no em dashes."
+    ],
+    "rules": [
+      {
+        "name": "The Tone-Is-Role Rule",
+        "body": "Pink = creators, teal = instructors, lilac = churches. Every tab, panel, step light, section number, selected chip and focus ring within a role takes that role's `--tone`. A new role gets a new tone; an existing tone is never reused for decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tinted-Dark Rule",
+        "body": "Never use `#000`, `#fff` or neutral grey. Every neutral carries 0.005–0.09 chroma toward hue 285–310.",
+        "section": "colors"
+      },
+      {
+        "name": "The Short-Caps Rule",
+        "body": "Uppercase is only for labels of three words or fewer. Never put uppercase on a sentence, never put an uppercase kicker directly above the hero H1, and never repeat an uppercase eyebrow as the grammar above every section.",
+        "section": "typography"
+      },
+      {
+        "name": "The Question-Is-The-Label Rule",
+        "body": "Form labels are the full question in sentence case, not shortened field names. Hints explain *why* (\"Para sabermos a quem pedir referências…\"), not *what*.",
+        "section": "typography"
+      },
+      {
+        "name": "The Only-Lights-Glow Rule",
+        "body": "A coloured glow means \"this is a light\". Only map dots, path step lights, the confirmation light and the button beam may glow. Buttons, cards, rail dots and inputs never get a coloured halo.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do tie every accent to a role through `--tone`: pink for creators, teal for instructors, lilac for churches.",
+      "Do keep the page dark: `night-0` base, lighter indigo layers for sections and slanted `clip-path` edges (about 4–5vw) between them.",
+      "Do use Figtree 900 with negative tracking for display type and Noto Sans for everything a person reads at length.",
+      "Do use the orbiting-beam `.btn--glow` for the one main action in a view, and a ghost pill for anything secondary.",
+      "Do write every string in European Portuguese (pt-PT: \"contacto\", \"telemóvel\", \"equipa\"), and write questions verbatim from the requirements document.",
+      "Do animate only transform, opacity and `grid-template-rows`, easing with `cubic-bezier(0.22, 1, 0.36, 1)`, and remove all looping motion under `prefers-reduced-motion`.",
+      "Do keep text contrast at 4.5:1 or better. Label text on the button gradient relies on the darkened `surface-sea` stop.",
+      "Do keep images local in `assets/images/` (flags, map, favicon). Load nothing from third parties except Google Fonts and the churches API."
+    ],
+    "donts": [
+      "Don't put a coloured glow on anything that isn't literally a light: no pink halo under buttons, no glowing rail dots, no glowing cards.",
+      "Don't place a small uppercase eyebrow or chip directly above the hero headline. Work dates and context into the lead paragraph instead.",
+      "Don't use gradient text, glassmorphism cards, hero-metric tiles or grids of identical icon cards.",
+      "Don't use `border-left` or `border-right` wider than 1px as a coloured accent stripe. The reveal thread is exactly 1px, in `line-strong`.",
+      "Don't open a modal. Confirmations, errors and follow-up questions all appear inline.",
+      "Don't use emoji flags; Windows shows them as letters. Use the SVGs in `assets/images/flags/`.",
+      "Don't use em dashes or `--` in copy. Use commas, colons or full stops.",
+      "Don't reach for stained glass, parchment, ornamental serifs or any \"church bulletin\" styling. The voice is the onevoice27.org night sky."
+    ]
+  }
+}
