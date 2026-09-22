@@ -47,6 +47,12 @@ typography:
     fontSize: "0.95rem"
     fontWeight: 600
     lineHeight: 1.4
+  nav-label:
+    fontFamily: "Figtree, system-ui, sans-serif"
+    fontSize: "1rem"
+    fontWeight: 650
+    lineHeight: 1
+    letterSpacing: "-0.015em"
   label:
     fontFamily: "Figtree, system-ui, sans-serif"
     fontSize: "0.78rem"
@@ -103,7 +109,10 @@ components:
     backgroundColor: "{colors.pink}"
     textColor: "{colors.night-0}"
     rounded: "{rounded.pill}"
-    padding: "10px 14px"
+    padding: "12px 20px"
+  header-bar:
+    height: "80px"
+    rounded: "{rounded.header}"
   submit-panel:
     rounded: "{rounded.panel}"
     padding: "24px"
@@ -163,7 +172,7 @@ The strategy is **Committed**. Night indigo covers nearly the whole surface, and
 
 ## 3. Typography
 
-**Display Font:** Figtree (with system-ui, sans-serif), weights 600–900
+**Display Font:** Figtree (with system-ui, sans-serif), variable weight axis 600–900 (loaded as `wght@600..900` so in-between weights such as 650 are real, not synthesised)
 **Body Font:** Noto Sans (with system-ui, sans-serif), weights 400–700
 
 **Character:** Figtree at 900 with tight negative tracking gives the headlines the dense, confident voice of onevoice27.org. Noto Sans keeps long form questions readable and has full coverage of Portuguese diacritics. Both families come from the reference site; keep them.
@@ -174,7 +183,8 @@ The strategy is **Committed**. Night indigo covers nearly the whole surface, and
 - **Title** (800, `clamp(1.35rem, 2.2vw, 1.9rem)`): step role names and fieldset legends, with legends paired with a numbered tone disc.
 - **Body** (400, 1rem, 1.6): paragraphs are capped at 52–62ch. The hero lead scales up to 1.15rem.
 - **Field Label** (Noto Sans 600, 0.95rem, 1.4): every question, in Starlight. Questions are full sentences taken verbatim from the requirements document.
-- **Label** (Figtree 700, 0.72–0.82rem, 0.1–0.16em tracking, uppercase): button text, nav links, step phase markers ("1 · Conteúdo") and combobox group headers. Keep these to three words or fewer.
+- **Nav Label** (Figtree 650, 1rem, −0.015em tracking, uppercase): header links only, as on onevoice27.org. They are set tight, not tracked out; that tightness is what makes the header read as confident rather than timid.
+- **Label** (Figtree 700, 0.72–0.82rem, 0.1–0.16em tracking, uppercase): button text, step phase markers ("1 · Conteúdo") and combobox group headers. Keep these to three words or fewer.
 
 ### Named Rules
 **The Short-Caps Rule.** Uppercase is only for labels of three words or fewer. Never put uppercase on a sentence, never put an uppercase kicker directly above the hero H1, and never repeat an uppercase eyebrow as the grammar above every section.
@@ -221,8 +231,11 @@ There are almost none, by design. Fieldsets are open sections headed by a number
 - **Conditional reveals:** follow-up questions open under their parent by animating `grid-template-rows` from 0fr to 1fr, indented 18px behind a 1px thread. Hidden follow-ups are `inert` and disabled, so they are neither validated nor submitted.
 
 ### Navigation
-- **Header:** a sticky bar skewed −8° (the content is counter-skewed so it stays upright). It uses a translucent `night` fill with backdrop blur, radius 18px and a 1px `line` border, echoing the reference site's slanted header. Below 640px the skew is removed and only the pink "Inscrever" CTA remains.
-- **Wordmark:** "OneVoice**27**" in italic Figtree 900, with 27 in Candle Pink and a teal "PORTUGAL" tag beside it.
+- **Header (ported from onevoice27.org):** a sticky bar made of two layers. `::before` is a **1.5px light ring**, a 112° gradient (pink 0.82 → indigo 0.42 at 43% → faint white 0.12 at 68% → teal 0.76) with neutral drop shadows. `::after` is the **surface** inset 1.5px inside it: translucent indigo (0.77) with a 7% top highlight and an 18px backdrop blur. Only these layers slant, never the content. The bar is 64px tall below 768px and 80px from 768px up. From **1280px up** (the original's breakpoint, not earlier) both layers slant 20° with radius 18px, and the padding grows by half the slant's run (14.56px) so the text stays clear of the angled ends. Below 1280px it is a straight bar (radius 12px, or 14px on phones).
+- **Hide on scroll:** the header slides up and fades while you scroll down past 120px and returns on any scroll up (420ms, `cubic-bezier(0.32, 0.72, 0, 1)`). It never hides while keyboard focus is inside it.
+- **Links:** Nav Label type in Starlight at 90%, 44px tall targets, gaps of `clamp(1.25rem, 2.6vw, 2.75rem)`. On hover or focus, a **colour wipe** passes through the letters: the label is painted by a 230%-wide gradient (pink → indigo → teal → Starlight) that slides from 100% to 0 in 360ms. At rest the text is plain Starlight. Below 640px only the CTA remains.
+- **CTA:** the pink "Inscrever" pill (12px 20px, 0.9rem) turns Starlight on hover. It doesn't get the wipe.
+- **Wordmark:** "OneVoice**27**" in italic Figtree 900 (1.4rem), with 27 in Candle Pink and a teal "PORTUGAL" tag (0.7rem, 0.2em tracking) centred beneath it, like the reference logo's tagline.
 - **Tabs:** a segmented pill track on `night-0`. The selected tab fills with its role tone. Arrow keys, Home and End move between tabs, and the choice syncs to `#instrutor`, `#criador` or `#igreja`. Below 560px the tabs stack.
 
 ### Hero Light Map (signature)
@@ -244,6 +257,7 @@ A searchable `role="combobox"` with no dependencies. Results are grouped by regi
 - **Do** keep the page dark: `night-0` base, lighter indigo layers for sections and slanted `clip-path` edges (about 4–5vw) between them.
 - **Do** use Figtree 900 with negative tracking for display type and Noto Sans for everything a person reads at length.
 - **Do** use the orbiting-beam `.btn--glow` for the one main action in a view, and a ghost pill for anything secondary.
+- **Do** match onevoice27.org's breakpoints when porting its components (for example, the header slants only from 1280px up). Check the original at the same viewport width before assuming how it looks.
 - **Do** write every string in European Portuguese (pt-PT: "contacto", "telemóvel", "equipa"), and write questions verbatim from the requirements document.
 - **Do** animate only transform, opacity and `grid-template-rows`, easing with `cubic-bezier(0.22, 1, 0.36, 1)`, and remove all looping motion under `prefers-reduced-motion`.
 - **Do** keep text contrast at 4.5:1 or better. Label text on the button gradient relies on the darkened `surface-sea` stop.
@@ -252,7 +266,7 @@ A searchable `role="combobox"` with no dependencies. Results are grouped by regi
 ### Don't:
 - **Don't** put a coloured glow on anything that isn't literally a light: no pink halo under buttons, no glowing rail dots, no glowing cards.
 - **Don't** place a small uppercase eyebrow or chip directly above the hero headline. Work dates and context into the lead paragraph instead.
-- **Don't** use gradient text, glassmorphism cards, hero-metric tiles or grids of identical icon cards.
+- **Don't** use gradient text, glassmorphism cards, hero-metric tiles or grids of identical icon cards. **The one sanctioned exception** is the header nav hover wipe ported from onevoice27.org: it only appears on hover or focus, and the text is a plain solid colour at rest. Never extend it to headings, body text or buttons.
 - **Don't** use `border-left` or `border-right` wider than 1px as a coloured accent stripe. The reveal thread is exactly 1px, in `line-strong`.
 - **Don't** open a modal. Confirmations, errors and follow-up questions all appear inline.
 - **Don't** use emoji flags; Windows shows them as letters. Use the SVGs in `assets/images/flags/`.

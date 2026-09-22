@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-22T15:46:28+00:00",
+  "generatedAt": "2026-09-22T15:54:12+00:00",
   "title": "Design System: OneVoice27 Portugal",
   "extensions": {
     "colorMeta": {
@@ -268,7 +268,11 @@
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Uppercase, three words or fewer: buttons, nav, step phases."
+        "purpose": "Uppercase, three words or fewer: buttons, step phases, combobox groups."
+      },
+      "nav-label": {
+        "displayName": "Nav Label",
+        "purpose": "Header links: Figtree 650, 1rem, -0.015em, uppercase, as on onevoice27.org."
       }
     },
     "shadows": [
@@ -291,6 +295,11 @@
         "name": "light-halo",
         "value": "0 0 24px 4px color-mix(in oklch, var(--tone) 45%, transparent)",
         "purpose": "Path step lights only."
+      },
+      {
+        "name": "header-ring",
+        "value": "drop-shadow(0 3px 7px oklch(0.08 0.03 290 / 0.28)) drop-shadow(0 18px 30px oklch(0.08 0.03 290 / 0.24))",
+        "purpose": "Filter on the header light ring (follows the slant)."
       }
     ],
     "motion": [
@@ -318,6 +327,16 @@
         "name": "kindle",
         "value": "1.6s",
         "purpose": "Confirmation light scaling in after a successful submit."
+      },
+      {
+        "name": "header-hide",
+        "value": "transform 420ms cubic-bezier(0.32, 0.72, 0, 1), opacity 300ms",
+        "purpose": "Header slides away on scroll down, returns on scroll up."
+      },
+      {
+        "name": "nav-wipe",
+        "value": "background-position 360ms cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Pink-to-teal colour wipe through nav labels on hover/focus."
       }
     ],
     "breakpoints": [
@@ -344,6 +363,14 @@
       {
         "name": "submit-roomy",
         "value": "720px"
+      },
+      {
+        "name": "header-tall",
+        "value": "768px"
+      },
+      {
+        "name": "header-slant",
+        "value": "1280px"
       }
     ]
   },
@@ -395,6 +422,14 @@
       "description": "Pink pill in the skewed sticky header.",
       "html": "<a class=\"ds-nav-cta\" href=\"#\">Inscrever</a>",
       "css": ":host{--night-0:oklch(0.14 0.05 288);--ink:oklch(0.97 0.008 310);--ink-2:oklch(0.87 0.02 305);--line-strong:oklch(0.7 0.07 295 / 0.5);--pink:oklch(0.81 0.085 345);--teal:oklch(0.79 0.07 200);--ease:cubic-bezier(0.22,1,0.36,1)}.ds-nav-cta{display:inline-block;padding:10px 14px;border-radius:999px;font:700 .75rem/1 Figtree,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--night-0);background:var(--pink);transition:background-color .3s}.ds-nav-cta:hover{background:var(--ink)}"
+    },
+    {
+      "name": "Header Nav Link",
+      "kind": "nav",
+      "refersTo": "header-bar",
+      "description": "Figtree 650 uppercase label; a pink-indigo-teal colour wipe passes through it on hover.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\"><span>O projeto</span></a><a href=\"#\"><span>Como participar</span></a></nav>",
+      "css": ":host{--ease:cubic-bezier(0.22,1,0.36,1)}.ds-nav{display:flex;gap:2rem;padding:24px 32px;background:oklch(0.18 0.075 287)}.ds-nav a{display:flex;align-items:center;min-height:2.75rem;font:650 1rem/1 Figtree,system-ui,sans-serif;letter-spacing:-0.015em;text-transform:uppercase;text-decoration:none}.ds-nav a span{background:linear-gradient(90deg,oklch(0.74 0.1 345/.82) 0%,oklch(0.58 0.1 275/.42) 18%,oklch(0.69 0.07 205/.76) 36%,oklch(0.97 0.008 310/.9) 48%,oklch(0.97 0.008 310/.9) 100%) 100% 50%/230% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;transition:background-position 360ms var(--ease)}.ds-nav a:hover span,.ds-nav a:focus-visible span{background-position:0 50%}.ds-nav a:focus-visible{outline:2px solid oklch(0.79 0.07 200);outline-offset:3px}"
     }
   ],
   "narrative": {
@@ -440,6 +475,7 @@
       "Do keep the page dark: `night-0` base, lighter indigo layers for sections and slanted `clip-path` edges (about 4–5vw) between them.",
       "Do use Figtree 900 with negative tracking for display type and Noto Sans for everything a person reads at length.",
       "Do use the orbiting-beam `.btn--glow` for the one main action in a view, and a ghost pill for anything secondary.",
+      "Do match onevoice27.org's breakpoints when porting its components (for example, the header slants only from 1280px up). Check the original at the same viewport width before assuming how it looks.",
       "Do write every string in European Portuguese (pt-PT: \"contacto\", \"telemóvel\", \"equipa\"), and write questions verbatim from the requirements document.",
       "Do animate only transform, opacity and `grid-template-rows`, easing with `cubic-bezier(0.22, 1, 0.36, 1)`, and remove all looping motion under `prefers-reduced-motion`.",
       "Do keep text contrast at 4.5:1 or better. Label text on the button gradient relies on the darkened `surface-sea` stop.",
@@ -448,7 +484,7 @@
     "donts": [
       "Don't put a coloured glow on anything that isn't literally a light: no pink halo under buttons, no glowing rail dots, no glowing cards.",
       "Don't place a small uppercase eyebrow or chip directly above the hero headline. Work dates and context into the lead paragraph instead.",
-      "Don't use gradient text, glassmorphism cards, hero-metric tiles or grids of identical icon cards.",
+      "Don't use gradient text, glassmorphism cards, hero-metric tiles or grids of identical icon cards. The one sanctioned exception is the header nav hover wipe ported from onevoice27.org: it only appears on hover or focus, and the text is a plain solid colour at rest. Never extend it to headings, body text or buttons.",
       "Don't use `border-left` or `border-right` wider than 1px as a coloured accent stripe. The reveal thread is exactly 1px, in `line-strong`.",
       "Don't open a modal. Confirmations, errors and follow-up questions all appear inline.",
       "Don't use emoji flags; Windows shows them as letters. Use the SVGs in `assets/images/flags/`.",

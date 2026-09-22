@@ -658,9 +658,33 @@
   });
 
   /* ------------------------------------------------------------------ */
+  /* Cabeçalho: esconde ao descer, volta ao subir                         */
+  /* ------------------------------------------------------------------ */
+  function setupHeader() {
+    const header = $(".site-header");
+    if (!header) return;
+    let lastY = scrollY;
+    let ticking = false;
+    const update = () => {
+      const y = scrollY;
+      const down = y > lastY + 4;
+      const up = y < lastY - 4;
+      // nunca esconder no topo, nem enquanto o foco do teclado está no cabeçalho
+      if (y < 120 || header.contains(document.activeElement)) header.classList.remove("is-hidden");
+      else if (down) header.classList.add("is-hidden");
+      else if (up) header.classList.remove("is-hidden");
+      if (down || up) lastY = y;
+      ticking = false;
+    };
+    addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    header.addEventListener("focusin", () => header.classList.remove("is-hidden"));
+  }
+
+  /* ------------------------------------------------------------------ */
   /* Arranque                                                            */
   /* ------------------------------------------------------------------ */
   renderMap();
+  setupHeader();
   $$("[data-combo]").forEach(setupCombo);
   $$("form[data-form]").forEach(setupForm);
   routeFromHash();

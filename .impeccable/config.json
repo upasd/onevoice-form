@@ -20,6 +20,24 @@
         ],
         "createdAt": "2026-09-22T14:36:19.624Z",
         "reason": "Claude triage: brand-tinted near-white oklch(0.87) text on near-black indigo gradient (~12:1), not grey on saturated colour"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-22T15:53:54.281Z",
+        "reason": "User asked to port the onevoice27.org header nav; its hover is a background-clip:text colour wipe. Hover-only on .nav labels; solid colour at rest. Documented as the single exception in DESIGN.md."
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "assets/css/styles.css"
+        ],
+        "createdAt": "2026-09-22T15:54:38.238Z",
+        "reason": "User asked to port the onevoice27.org header nav; its hover is a background-clip:text colour wipe on .nav labels (hover/focus only, solid at rest). Documented as the single exception in DESIGN.md."
       }
     ]
   }
