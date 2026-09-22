@@ -472,7 +472,7 @@ img, svg { display: block; max-width: 100%; }
 .rail__list a:hover { background: var(--night-2); color: var(--ink); }
 .rail__dot {
   width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
-  font: 700 0.75rem/1 var(--font-display); color: var(--ink-3);
+  font: 700 0.75rem/1 var(--font-display); font-variant-numeric: tabular-nums; color: var(--ink-3);
   box-shadow: 0 0 0 1px var(--line-strong) inset;
   transition: background-color 0.4s, box-shadow 0.4s, color 0.4s;
 }
@@ -502,7 +502,22 @@ img, svg { display: block; max-width: 100%; }
 }
 .block__n {
   flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
-  font-size: 0.95rem; font-weight: 800; color: var(--night-0); background: var(--tone);
+  font-size: 0.95rem; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums;
+  color: var(--night-0); background: var(--tone);
+}
+/* Centre digits on their ink, not the line box. Grid centring puts Figtree
+   digits ~1.6px high. Where supported, the circle becomes a block whose text
+   is trimmed to cap height and baseline, then padded equally to the diameter.
+   (text-box must sit on a block container; a grid's anonymous item ignores it.) */
+@supports (text-box: trim-both cap alphabetic) {
+  .block__n, .rail__dot {
+    --d: 34px;
+    display: block; box-sizing: border-box; height: var(--d);
+    padding-block: calc((var(--d) - 1cap) / 2);
+    text-align: center;
+    text-box: trim-both cap alphabetic;
+  }
+  .rail__dot { --d: 26px; }
 }
 /* <legend> doesn't take grid gap as its first child spacing in every engine */
 .block legend + * { margin-top: 18px; }
