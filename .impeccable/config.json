@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-22T14:36:19.615Z",
+        "reason": "Claude triage: glowing 'lights' on path steps and confirmation are the OneVoice27 brand metaphor (onevoice27.org 'Add your light' map); decorative glows on buttons/rail removed"
+      },
+      {
+        "rule": "gray-on-color",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-22T14:36:19.624Z",
+        "reason": "Claude triage: brand-tinted near-white oklch(0.87) text on near-black indigo gradient (~12:1), not grey on saturated colour"
+      }
+    ]
+  }
+}

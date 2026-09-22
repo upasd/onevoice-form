@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OneVoice27 Portugal · Participar</title>
+  <meta name="description" content="Junte-se ao OneVoice27 em Portugal: candidate-se como instrutor, criador de conteúdo ou inscreva a sua igreja.">
+  <meta name="theme-color" content="#120c34">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;800;900&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#inscricao">Saltar para a inscrição</a>
+
+  <header class="site-header">
+    <div class="site-header__bar">
+      <a class="wordmark" href="#topo" aria-label="OneVoice27 Portugal, início">
+        <span class="wordmark__name">OneVoice<b>27</b></span>
+        <span class="wordmark__place">Portugal</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="#projeto">O projeto</a></li>
+          <li><a href="#caminho">Como participar</a></li>
+          <li><a class="nav__cta" href="#inscricao">Inscrever</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <h1 id="hero-title" class="hero__title">Uma só voz,<br><span>em cada igreja.</span></h1>
+        <p class="hero__lead">
+          <strong>Em setembro de 2027</strong>, 2000 anos depois do batismo de Jesus, a Igreja Adventista
+          do Sétimo Dia, no mundo inteiro, vai anunciar o Messias em conjunto.
+          Em Portugal, essa voz precisa de pessoas: quem crie conteúdos, quem acompanhe cada interessado
+          e igrejas prontas a receber.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--glow" href="#caminho">Escolher como participar</a>
+          <a class="btn btn--ghost" href="https://onevoice27.org/" target="_blank" rel="noopener">Projeto mundial <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <figure class="hero__map" id="projeto">
+        <div class="map" data-map>
+          <img src="assets/images/portugal.svg" alt="" width="610" height="420">
+          <svg class="map__lights" viewBox="0 0 610 420" aria-hidden="true" data-map-lights></svg>
+          <p class="map__tip" data-map-tip hidden></p>
+        </div>
+        <figcaption>
+          <strong data-church-count>120</strong> igrejas adventistas em Portugal,
+          de Bragança a Faro, dos Açores à Madeira. Cada luz é uma comunidade.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- CAMINHO -->
+    <section class="path" id="caminho" aria-labelledby="path-title">
+      <header class="section-head">
+        <h2 id="path-title">O caminho de uma pessoa até à igreja</h2>
+        <p>Alguém vê um conteúdo, responde a um apelo e encontra quem o acompanhe até uma comunidade local. Há três formas de fazer parte deste caminho.</p>
+      </header>
+
+      <ol class="path__steps">
+        <li class="step step--role" style="--tone: var(--pink)">
+          <span class="step__light" aria-hidden="true"></span>
+          <p class="step__phase">1 · Conteúdo</p>
+          <h3>Criadores de conteúdo</h3>
+          <p>Vídeos, imagens, textos e música para as campanhas digitais, que levam os interessados até aos instrutores.</p>
+          <a class="step__link" href="#criador" data-open-form="criador">Quero criar conteúdos <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="step step--person">
+          <span class="step__light" aria-hidden="true"></span>
+          <p class="step__phase">2 · Apelo</p>
+          <p class="step__quote">«Gostava de saber mais.»</p>
+          <p>Alguém responde a uma campanha e pede contacto.</p>
+        </li>
+        <li class="step step--role" style="--tone: var(--teal)">
+          <span class="step__light" aria-hidden="true"></span>
+          <p class="step__phase">3 · Acompanhamento</p>
+          <h3>Instrutores</h3>
+          <p>Primeiro contacto, conversas sobre fé, estudos bíblicos e encaminhamento para uma igreja local.</p>
+          <a class="step__link" href="#instrutor" data-open-form="instrutor">Quero ser instrutor <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="step step--role" style="--tone: var(--lilac)">
+          <span class="step__light" aria-hidden="true"></span>
+          <p class="step__phase">4 · Comunidade</p>
+          <h3>Igrejas aderentes</h3>
+          <p>A igreja local liga-se ao projeto e está pronta a receber. Inscrição feita pelo diretor de Comunicação ou por quem o Conselho de Igreja indicar.</p>
+          <a class="step__link" href="#igreja" data-open-form="igreja">Inscrever a minha igreja <span aria-hidden="true">→</span></a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- INSCRIÇÃO -->
+    <section class="signup" id="inscricao" aria-labelledby="signup-title">
+      <header class="section-head section-head--signup">
+        <h2 id="signup-title">Inscrição</h2>
+        <div class="tabs" role="tablist" aria-label="Tipo de inscrição">
+          <button role="tab" id="tab-instrutor" aria-controls="panel-instrutor" aria-selected="true" data-tab="instrutor" style="--tone: var(--teal)">Instrutor</button>
+          <button role="tab" id="tab-criador" aria-controls="panel-criador" aria-selected="false" tabindex="-1" data-tab="criador" style="--tone: var(--pink)">Criador de conteúdo</button>
+          <button role="tab" id="tab-igreja" aria-controls="panel-igreja" aria-selected="false" tabindex="-1" data-tab="igreja" style="--tone: var(--lilac)">Igreja aderente</button>
+        </div>
+      </header>
+
+      <!-- ===================== 1. INSTRUTOR ===================== -->
+      <div class="panel" role="tabpanel" id="panel-instrutor" aria-labelledby="tab-instrutor" data-panel="instrutor" style="--tone: var(--teal)">
+        <aside class="rail" aria-label="Progresso">
+          <p class="rail__intro">Para quem quer acompanhar os interessados que chegam através dos apelos das campanhas OneVoice27.</p>
+          <ol class="rail__list" data-rail></ol>
+          <p class="rail__draft" data-draft-status></p>
+        </aside>
+
+        <form class="form" data-form="instrutor" novalidate>
+          <fieldset class="block" data-step="Dados pessoais">
+            <legend><span class="block__n">1</span> Dados pessoais e ligação à Igreja</legend>
+
+            <div class="field">
+              <label for="i-nome">Nome completo</label>
+              <input id="i-nome" name="nome" type="text" autocomplete="name" required>
+            </div>
+            <div class="row">
+              <div class="field field--short">
+                <label for="i-idade">Idade</label>
+                <input id="i-idade" name="idade" type="number" inputmode="numeric" min="16" max="110" required>
+              </div>
+              <div class="field">
+                <label for="i-cidade">Cidade ou vila onde reside</label>
+                <input id="i-cidade" name="cidade" type="text" autocomplete="address-level2" required>
+              </div>
+            </div>
+
+            <div class="field" data-church-field>
+              <label for="i-igreja">Igreja que frequenta</label>
+              <div class="combo" data-combo data-pastor-target="i-pastor">
+                <input id="i-igreja" type="text" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="i-igreja-list" autocomplete="off" placeholder="Escreva para procurar…" required>
+                <input type="hidden" name="igreja" data-combo-value>
+                <ul class="combo__list" id="i-igreja-list" role="listbox" hidden></ul>
+              </div>
+            </div>
+            <div class="field">
+              <label for="i-pastor">Nome do pastor da sua igreja</label>
+              <input id="i-pastor" name="pastor" type="text" required aria-describedby="i-pastor-hint">
+              <p class="hint" id="i-pastor-hint">Para sabermos a quem pedir referências, se for necessário.</p>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="i-email">Email</label>
+                <input id="i-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="i-tel">Contacto telefónico</label>
+                <input id="i-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="912 345 678" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="i-formacao">Formação académica</label>
+                <select id="i-formacao" name="formacao_academica" required>
+                  <option value="">Escolha…</option>
+                  <option>Ensino básico</option>
+                  <option>Ensino secundário</option>
+                  <option>Curso profissional</option>
+                  <option>Licenciatura</option>
+                  <option>Mestrado</option>
+                  <option>Doutoramento</option>
+                  <option>Outra</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="i-profissao">Profissão ou área de atividade</label>
+                <input id="i-profissao" name="profissao" type="text" autocomplete="organization-title" required>
+              </div>
+            </div>
+
+            <div class="field" role="group" aria-labelledby="i-cargos-l" data-group="cargos">
+              <p class="label" id="i-cargos-l">Cargo ou funções que desempenha na Igreja</p>
+              <p class="hint">Pode escolher mais do que uma.</p>
+              <div class="choices">
+                <label class="chip"><input type="checkbox" name="cargos" value="Ancião/Anciã"><span>Ancião/Anciã</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Diácono/Diaconisa"><span>Diácono/Diaconisa</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Comunicação"><span>Comunicação</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Ministério Pessoal"><span>Ministério Pessoal</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Escola Sabatina"><span>Escola Sabatina</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Jovens / Desbravadores"><span>Jovens / Desbravadores</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Ministério da Mulher"><span>Ministério da Mulher</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Ministério da Criança"><span>Ministério da Criança</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Música"><span>Música</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Secretaria / Tesouraria"><span>Secretaria / Tesouraria</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Outra"><span>Outra</span></label>
+                <label class="chip chip--none"><input type="checkbox" name="cargos" value="Nenhuma" data-exclusive><span>Não desempenho atualmente nenhuma função</span></label>
+              </div>
+              <div class="reveal" data-when="cargos:Outra">
+                <div class="reveal__inner">
+                  <div class="field">
+                    <label for="i-cargo-outro">Qual?</label>
+                    <input id="i-cargo-outro" name="cargo_outro" type="text" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field" role="group" aria-labelledby="i-linguas-l" data-group="linguas">
+              <p class="label" id="i-linguas-l">Línguas em que consegue acompanhar um interessado</p>
+              <div class="choices">
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Português"><span><img class="flag" src="assets/images/flags/pt.svg" alt="" width="18" height="18">Português</span></label>
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Inglês"><span><img class="flag" src="assets/images/flags/gb.svg" alt="" width="18" height="18">Inglês</span></label>
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Espanhol"><span><img class="flag" src="assets/images/flags/es.svg" alt="" width="18" height="18">Espanhol</span></label>
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Francês"><span><img class="flag" src="assets/images/flags/fr.svg" alt="" width="18" height="18">Francês</span></label>
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Crioulo cabo-verdiano"><span><img class="flag" src="assets/images/flags/cv.svg" alt="" width="18" height="18">Crioulo cabo-verdiano</span></label>
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Romeno"><span><img class="flag" src="assets/images/flags/ro.svg" alt="" width="18" height="18">Romeno</span></label>
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Ucraniano"><span><img class="flag" src="assets/images/flags/ua.svg" alt="" width="18" height="18">Ucraniano</span></label>
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Língua Gestual Portuguesa"><span><svg class="flag flag--icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12m0-7.5v-1a1.5 1.5 0 0 1 3 0V12m0-6.5a1.5 1.5 0 0 1 3 0V12m0-3.5a1.5 1.5 0 0 1 3 0V15a7 7 0 0 1-7 7h-.5a7 7 0 0 1-5.6-2.8L4.2 16a1.6 1.6 0 0 1 2.4-2.1L8 15.5"/></svg>Língua Gestual Portuguesa</span></label>
+                <label class="chip chip--flag"><input type="checkbox" name="linguas" value="Outra"><span><svg class="flag flag--icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.8 3.8 6 3.8 9.5s-1.2 6.7-3.8 9.5c-2.6-2.8-3.8-6-3.8-9.5s1.2-6.7 3.8-9.5z"/></svg>Outra</span></label>
+              </div>
+              <div class="reveal" data-when="linguas:Outra">
+                <div class="reveal__inner">
+                  <div class="field">
+                    <label for="i-lingua-outra">Quais?</label>
+                    <input id="i-lingua-outra" name="linguas_outras" type="text" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="block" data-step="Experiência e motivação">
+            <legend><span class="block__n">2</span> Experiência e motivação</legend>
+
+            <div class="field">
+              <label for="i-porque">Porque gostaria de ser instrutor OneVoice27?</label>
+              <textarea id="i-porque" name="motivacao" rows="4" required></textarea>
+            </div>
+
+            <div class="field" role="radiogroup" aria-labelledby="i-exp-l" data-group="experiencia">
+              <p class="label" id="i-exp-l">Tem experiência em dar estudos bíblicos ou acompanhar pessoas interessadas na fé?</p>
+              <div class="choices">
+                <label class="chip"><input type="radio" name="experiencia" value="Sim"><span>Sim</span></label>
+                <label class="chip"><input type="radio" name="experiencia" value="Não"><span>Não</span></label>
+              </div>
+              <div class="reveal" data-when="experiencia:Sim">
+                <div class="reveal__inner">
+                  <div class="field">
+                    <label for="i-exp-desc">Descreva brevemente essa experiência <span class="opt">opcional</span></label>
+                    <textarea id="i-exp-desc" name="experiencia_descricao" rows="3"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="i-formacoes">Já frequentou alguma formação em estudos bíblicos, evangelismo, comunicação ou acompanhamento de pessoas? Qual? <span class="opt">opcional</span></label>
+              <textarea id="i-formacoes" name="formacoes" rows="2"></textarea>
+            </div>
+
+            <div class="field" role="radiogroup" aria-labelledby="i-avontade-l" data-group="a_vontade_contacto">
+              <p class="label" id="i-avontade-l">Sente-se à vontade para contactar alguém que pediu informações através de uma campanha digital?</p>
+              <div class="choices">
+                <label class="chip"><input type="radio" name="a_vontade_contacto" value="Sim"><span>Sim</span></label>
+                <label class="chip"><input type="radio" name="a_vontade_contacto" value="Com algum apoio inicial"><span>Com algum apoio inicial</span></label>
+                <label class="chip"><input type="radio" name="a_vontade_contacto" value="Não"><span>Não</span></label>
+              </div>
+            </div>
+
+            <div class="field" role="group" aria-labelledby="i-meios-l" data-group="meios">
+              <p class="label" id="i-meios-l">Que meios consegue utilizar para acompanhar interessados?</p>
+              <div class="choices">
+                <label class="chip"><input type="checkbox" name="meios" value="Telefone"><span>Telefone</span></label>
+                <label class="chip"><input type="checkbox" name="meios" value="WhatsApp"><span>WhatsApp</span></label>
+                <label class="chip"><input type="checkbox" name="meios" value="Email"><span>Email</span></label>
+                <label class="chip"><input type="checkbox" name="meios" value="Videochamada"><span>Videochamada</span></label>
+                <label class="chip"><input type="checkbox" name="meios" value="Encontros presenciais"><span>Encontros presenciais</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="block" data-step="Disponibilidade">
+            <legend><span class="block__n">3</span> Disponibilidade</legend>
+
+            <div class="field" role="radiogroup" aria-labelledby="i-fora-l" data-group="fora_de_horas">
+              <p class="label" id="i-fora-l">Tem disponibilidade para atender telefonemas fora do horário habitual de expediente?</p>
+              <div class="choices">
+                <label class="chip"><input type="radio" name="fora_de_horas" value="Sim"><span>Sim</span></label>
+                <label class="chip"><input type="radio" name="fora_de_horas" value="Mediante combinação prévia"><span>Mediante combinação prévia</span></label>
+                <label class="chip"><input type="radio" name="fora_de_horas" value="Não"><span>Não</span></label>
+              </div>
+              <div class="reveal" data-when="fora_de_horas:Sim|Mediante combinação prévia">
+                <div class="reveal__inner">
+                  <div class="field">
+                    <label for="i-horarios">Indique os horários e limites dessa disponibilidade <span class="opt">opcional</span></label>
+                    <textarea id="i-horarios" name="horarios" rows="2" placeholder="Ex.: dias úteis até às 22h; sábados à tarde"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field" role="radiogroup" aria-labelledby="i-quantas-l" data-group="acompanhar_simultaneo">
+              <p class="label" id="i-quantas-l">Quantas pessoas considera conseguir acompanhar em simultâneo?</p>
+              <div class="choices choices--scale">
+                <label class="chip"><input type="radio" name="acompanhar_simultaneo" value="1"><span>1</span></label>
+                <label class="chip"><input type="radio" name="acompanhar_simultaneo" value="2 a 3"><span>2 a 3</span></label>
+                <label class="chip"><input type="radio" name="acompanhar_simultaneo" value="4 a 5"><span>4 a 5</span></label>
+                <label class="chip"><input type="radio" name="acompanhar_simultaneo" value="6 a 10"><span>6 a 10</span></label>
+                <label class="chip"><input type="radio" name="acompanhar_simultaneo" value="Mais de 10"><span>Mais de 10</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="submit">
+            <p class="submit__note">A submissão deste formulário constitui uma candidatura e não garante a integração como instrutor OneVoice27. Todas as candidaturas estarão sujeitas a um processo de seleção e aprovação.</p>
+            <div class="field">
+              <label class="check"><input type="checkbox" name="confirmacao" value="sim" required><span>Li e compreendi as condições do processo de seleção e aprovação.</span></label>
+            </div>
+            <p class="submit__summary" data-summary role="alert" hidden></p>
+            <button class="btn btn--glow btn--wide" type="submit">Enviar candidatura</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ===================== 2. CRIADOR ===================== -->
+      <div class="panel" role="tabpanel" id="panel-criador" aria-labelledby="tab-criador" data-panel="criador" style="--tone: var(--pink)" hidden>
+        <aside class="rail" aria-label="Progresso">
+          <p class="rail__intro">Para quem quer colaborar na criação de conteúdos para as campanhas digitais, levando os interessados a um contacto com os instrutores.</p>
+          <ol class="rail__list" data-rail></ol>
+          <p class="rail__draft" data-draft-status></p>
+        </aside>
+
+        <form class="form" data-form="criador" novalidate>
+          <fieldset class="block" data-step="Dados pessoais">
+            <legend><span class="block__n">1</span> Dados pessoais e ligação à Igreja</legend>
+
+            <div class="field">
+              <label for="c-nome">Nome completo</label>
+              <input id="c-nome" name="nome" type="text" autocomplete="name" required>
+            </div>
+            <div class="row">
+              <div class="field field--short">
+                <label for="c-idade">Idade</label>
+                <input id="c-idade" name="idade" type="number" inputmode="numeric" min="14" max="110" required>
+              </div>
+              <div class="field">
+                <label for="c-cidade">Cidade ou vila onde reside</label>
+                <input id="c-cidade" name="cidade" type="text" autocomplete="address-level2" required>
+              </div>
+            </div>
+            <div class="field" data-church-field>
+              <label for="c-igreja">Igreja que frequenta</label>
+              <div class="combo" data-combo>
+                <input id="c-igreja" type="text" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="c-igreja-list" autocomplete="off" placeholder="Escreva para procurar…" required>
+                <input type="hidden" name="igreja" data-combo-value>
+                <ul class="combo__list" id="c-igreja-list" role="listbox" hidden></ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="c-email">Email</label>
+                <input id="c-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="c-tel">Contacto telefónico</label>
+                <input id="c-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="912 345 678" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="c-formacao">Formação académica</label>
+                <select id="c-formacao" name="formacao_academica" required>
+                  <option value="">Escolha…</option>
+                  <option>Ensino básico</option>
+                  <option>Ensino secundário</option>
+                  <option>Curso profissional</option>
+                  <option>Licenciatura</option>
+                  <option>Mestrado</option>
+                  <option>Doutoramento</option>
+                  <option>Outra</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="c-profissao">Profissão ou área de atividade</label>
+                <input id="c-profissao" name="profissao" type="text" autocomplete="organization-title" required>
+              </div>
+            </div>
+
+            <div class="field" role="group" aria-labelledby="c-cargos-l" data-group="cargos">
+              <p class="label" id="c-cargos-l">Cargo ou funções que desempenha na Igreja</p>
+              <p class="hint">Pode escolher mais do que uma.</p>
+              <div class="choices">
+                <label class="chip"><input type="checkbox" name="cargos" value="Ancião/Anciã"><span>Ancião/Anciã</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Diácono/Diaconisa"><span>Diácono/Diaconisa</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Comunicação"><span>Comunicação</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Ministério Pessoal"><span>Ministério Pessoal</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Escola Sabatina"><span>Escola Sabatina</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Jovens / Desbravadores"><span>Jovens / Desbravadores</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Ministério da Mulher"><span>Ministério da Mulher</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Ministério da Criança"><span>Ministério da Criança</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Música"><span>Música</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Secretaria / Tesouraria"><span>Secretaria / Tesouraria</span></label>
+                <label class="chip"><input type="checkbox" name="cargos" value="Outra"><span>Outra</span></label>
+                <label class="chip chip--none"><input type="checkbox" name="cargos" value="Nenhuma" data-exclusive><span>Não desempenho atualmente nenhuma função</span></label>
+              </div>
+              <div class="reveal" data-when="cargos:Outra">
+                <div class="reveal__inner">
+                  <div class="field">
+                    <label for="c-cargo-outro">Qual?</label>
+                    <input id="c-cargo-outro" name="cargo_outro" type="text" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="block" data-step="Colaboração e experiência">
+            <legend><span class="block__n">2</span> Áreas de colaboração e experiência</legend>
+
+            <div class="field">
+              <label for="c-porque">Porque gostaria de colaborar com o OneVoice27?</label>
+              <textarea id="c-porque" name="motivacao" rows="4" required></textarea>
+            </div>
+
+            <div class="field" role="group" aria-labelledby="c-areas-l">
+              <p class="label" id="c-areas-l">Em que áreas gostaria de colaborar? <span class="opt">opcional</span></p>
+              <div class="choices">
+                <label class="chip"><input type="checkbox" name="areas" value="Vídeo"><span>Vídeo</span></label>
+                <label class="chip"><input type="checkbox" name="areas" value="Fotografia"><span>Fotografia</span></label>
+                <label class="chip"><input type="checkbox" name="areas" value="Design gráfico"><span>Design gráfico</span></label>
+                <label class="chip"><input type="checkbox" name="areas" value="Ilustração"><span>Ilustração</span></label>
+                <label class="chip"><input type="checkbox" name="areas" value="Escrita"><span>Escrita</span></label>
+                <label class="chip"><input type="checkbox" name="areas" value="Música e áudio"><span>Música e áudio</span></label>
+                <label class="chip"><input type="checkbox" name="areas" value="Redes sociais"><span>Redes sociais</span></label>
+                <label class="chip"><input type="checkbox" name="areas" value="Tradução e legendagem"><span>Tradução e legendagem</span></label>
+              </div>
+            </div>
+
+            <div class="field" role="radiogroup" aria-labelledby="c-projeto-l" data-group="projeto_digital">
+              <p class="label" id="c-projeto-l">Já tem algum projeto digital?</p>
+              <p class="hint">Um canal, uma página, um podcast, um blogue…</p>
+              <div class="choices">
+                <label class="chip"><input type="radio" name="projeto_digital" value="Sim"><span>Sim</span></label>
+                <label class="chip"><input type="radio" name="projeto_digital" value="Não"><span>Não</span></label>
+              </div>
+              <div class="reveal" data-when="projeto_digital:Sim">
+                <div class="reveal__inner">
+                  <div class="field" role="group" aria-labelledby="c-plat-l" data-group="plataformas">
+                    <p class="label" id="c-plat-l">Em que plataformas?</p>
+                    <div class="choices">
+                      <label class="chip"><input type="checkbox" name="plataformas" value="YouTube"><span>YouTube</span></label>
+                      <label class="chip"><input type="checkbox" name="plataformas" value="Instagram"><span>Instagram</span></label>
+                      <label class="chip"><input type="checkbox" name="plataformas" value="TikTok"><span>TikTok</span></label>
+                      <label class="chip"><input type="checkbox" name="plataformas" value="Facebook"><span>Facebook</span></label>
+                      <label class="chip"><input type="checkbox" name="plataformas" value="Podcast"><span>Podcast</span></label>
+                      <label class="chip"><input type="checkbox" name="plataformas" value="Blogue ou site"><span>Blogue ou site</span></label>
+                      <label class="chip"><input type="checkbox" name="plataformas" value="WhatsApp ou Telegram"><span>Canal WhatsApp ou Telegram</span></label>
+                      <label class="chip"><input type="checkbox" name="plataformas" value="Outra"><span>Outra</span></label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="c-link">Link da sua maior plataforma</label>
+                    <input id="c-link" name="link_principal" type="url" inputmode="url" placeholder="https://" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="block" data-step="Disponibilidade">
+            <legend><span class="block__n">3</span> Disponibilidade e colaboração</legend>
+
+            <div class="field" role="radiogroup" aria-labelledby="c-rev-l" data-group="aceita_revisao">
+              <p class="label" id="c-rev-l">Está disponível para submeter os conteúdos à revisão e aprovação antes da publicação nos canais do projeto?</p>
+              <div class="choices">
+                <label class="chip"><input type="radio" name="aceita_revisao" value="Sim"><span>Sim</span></label>
+                <label class="chip"><input type="radio" name="aceita_revisao" value="Não"><span>Não</span></label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="c-obs">Observações adicionais <span class="opt">opcional</span></label>
+              <textarea id="c-obs" name="observacoes" rows="3"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="submit">
+            <p class="submit__note">As inscrições serão analisadas pela equipa de coordenação. A integração terá em conta as competências e as necessidades do projeto.</p>
+            <div class="field">
+              <label class="check"><input type="checkbox" name="confirmacao" value="sim" required><span>Li e compreendi as condições do processo de seleção e aprovação.</span></label>
+            </div>
+            <p class="submit__summary" data-summary role="alert" hidden></p>
+            <button class="btn btn--glow btn--wide" type="submit">Enviar inscrição</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ===================== 3. IGREJA ===================== -->
+      <div class="panel" role="tabpanel" id="panel-igreja" aria-labelledby="tab-igreja" data-panel="igreja" style="--tone: var(--lilac)" hidden>
+        <aside class="rail" aria-label="Progresso">
+          <p class="rail__intro">Preenchido, de preferência, pelo diretor de Comunicação da igreja, ou por outra pessoa indicada pelo Conselho de Igreja para assegurar a ligação ao OneVoice27.</p>
+          <ol class="rail__list" data-rail></ol>
+          <p class="rail__draft" data-draft-status></p>
+        </aside>
+
+        <form class="form" data-form="igreja" novalidate>
+          <fieldset class="block" data-step="Igreja">
+            <legend><span class="block__n">1</span> Identificação da igreja</legend>
+
+            <div class="field" data-church-field>
+              <label for="g-igreja">Igreja que representa</label>
+              <div class="combo" data-combo data-pastor-target="g-pastor" data-links-prefix="g-">
+                <input id="g-igreja" type="text" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="g-igreja-list" autocomplete="off" placeholder="Escreva para procurar…" required>
+                <input type="hidden" name="igreja" data-combo-value>
+                <ul class="combo__list" id="g-igreja-list" role="listbox" hidden></ul>
+              </div>
+            </div>
+            <div class="field">
+              <label for="g-pastor">Nome do pastor responsável pela igreja</label>
+              <input id="g-pastor" name="pastor" type="text" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="block" data-step="Presença digital">
+            <legend><span class="block__n">2</span> Presença digital e recursos locais</legend>
+            <p class="hint hint--block" data-links-note hidden>Preenchemos o que já consta do diretório de igrejas. Confirme ou corrija.</p>
+
+            <div class="row">
+              <div class="field">
+                <label for="g-site">Site <span class="opt">opcional</span></label>
+                <input id="g-site" name="site" type="url" inputmode="url" placeholder="https://">
+              </div>
+              <div class="field">
+                <label for="g-facebook">Facebook <span class="opt">opcional</span></label>
+                <input id="g-facebook" name="facebook" type="url" inputmode="url" placeholder="https://facebook.com/…">
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="g-instagram">Instagram <span class="opt">opcional</span></label>
+                <input id="g-instagram" name="instagram" type="url" inputmode="url" placeholder="https://instagram.com/…">
+              </div>
+              <div class="field">
+                <label for="g-youtube">YouTube <span class="opt">opcional</span></label>
+                <input id="g-youtube" name="youtube" type="url" inputmode="url" placeholder="https://youtube.com/…">
+              </div>
+            </div>
+            <div class="field">
+              <label for="g-outras">Outras redes ou links <span class="opt">opcional</span></label>
+              <textarea id="g-outras" name="outros_links" rows="2" placeholder="Um link por linha"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="block" data-step="Responsável">
+            <legend><span class="block__n">3</span> Responsável pela ligação ao projeto</legend>
+
+            <div class="field">
+              <label for="g-nome">Nome do responsável</label>
+              <input id="g-nome" name="nome" type="text" autocomplete="name" required>
+            </div>
+            <div class="row">
+              <div class="field field--short">
+                <label for="g-idade">Idade</label>
+                <input id="g-idade" name="idade" type="number" inputmode="numeric" min="16" max="110" required>
+              </div>
+              <div class="field">
+                <label for="g-cargo">Cargo ou funções que desempenha na Igreja</label>
+                <input id="g-cargo" name="cargo" type="text" placeholder="Ex.: Diretor(a) de Comunicação" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="g-email">Email</label>
+                <input id="g-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="g-tel">Contacto telefónico</label>
+                <input id="g-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="912 345 678" required>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="submit">
+            <div class="field">
+              <label class="check"><input type="checkbox" name="confirmacao" value="sim" required><span>Sou o diretor de Comunicação da igreja ou fui indicado(a) pelo Conselho de Igreja para esta ligação.</span></label>
+            </div>
+            <p class="submit__summary" data-summary role="alert" hidden></p>
+            <button class="btn btn--glow btn--wide" type="submit">Inscrever a igreja</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Confirmação (preenchida pelo JS) -->
+      <div class="done" data-done hidden tabindex="-1">
+        <span class="done__light" aria-hidden="true"></span>
+        <h3 data-done-title>Candidatura recebida</h3>
+        <p data-done-text></p>
+        <button class="btn btn--ghost" type="button" data-done-again>Fazer outra inscrição</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Os dados recolhidos servem apenas o processo de seleção e coordenação do OneVoice27 em Portugal e não serão partilhados com terceiros.</p>
+    <p><a href="https://onevoice27.org/" target="_blank" rel="noopener">onevoice27.org</a> · <a href="https://www.adventistas.org.pt/" target="_blank" rel="noopener">Igreja Adventista do Sétimo Dia em Portugal</a></p>
+  </footer>
+
+  <script src="assets/js/igrejas.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
