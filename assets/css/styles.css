@@ -422,6 +422,39 @@ img, svg { display: block; max-width: 100%; }
   .tabs button { border-radius: 12px; }
 }
 
+/* Sliding indicator: a copy of the tab row with dark labels on the role tone,
+   laid exactly over the real tabs and clipped to the selected tab's box.
+   Animating clip-path (not width/left) keeps the pill ends round mid-flight,
+   stays off the layout path, and keeps every label legible while it moves:
+   under the pill it's dark-on-tone, elsewhere light-on-night. JS sets the insets. */
+.tabs.has-indicator { position: relative; isolation: isolate; }
+.tabs__indicator {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  display: inherit; flex-wrap: inherit; grid-template-columns: inherit; gap: inherit; padding: inherit;
+  border-radius: inherit;
+  --t: 6px; --r: 100%; --b: 6px; --l: 6px;
+  clip-path: inset(var(--t) var(--r) var(--b) var(--l) round var(--ind-radius, 999px));
+  background: var(--teal);
+  transition: clip-path 480ms var(--ease), background-color 480ms var(--ease);
+}
+.tabs__indicator span {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 0 20px;
+  font: 700 0.9rem/1 var(--font-display); color: var(--night-0); white-space: nowrap;
+}
+.tabs.no-anim .tabs__indicator { transition: none; }
+.tabs.has-indicator button[aria-selected="true"] { color: var(--ink-3); background: transparent; }
+@media (max-width: 560px) { .tabs__indicator { --ind-radius: 12px; } }
+
+/* the newly chosen form eases in */
+@keyframes panel-in { from { opacity: 0; transform: translateY(10px); } }
+.panel.is-entering { animation: panel-in 420ms var(--ease) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tabs__indicator { transition: none; }
+  .panel.is-entering { animation: none; }
+}
+
 .panel {
   max-width: var(--max); margin: clamp(40px, 5vw, 64px) auto 0; padding: 0 var(--gutter);
   display: grid; grid-template-columns: 260px minmax(0, 720px); gap: clamp(32px, 6vw, 96px);

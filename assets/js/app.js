@@ -125,8 +125,54 @@
       t.tabIndex = on ? 0 : -1;
       if (on && focus) t.focus();
     });
-    panels.forEach((p) => (p.hidden = p.dataset.panel !== key));
+    panels.forEach((p) => {
+      const show = p.dataset.panel === key;
+      if (show && p.hidden && animateSwitch) {
+        p.classList.remove("is-entering");
+        void p.offsetWidth; // restart the animation
+        p.classList.add("is-entering");
+      }
+      p.hidden = !show;
+    });
     done.hidden = true;
+    moveIndicator();
+  }
+
+  // Indicador deslizante: uma camada com a cor do papel, recortada à forma do separador ativo
+  const tabList = $(".tabs");
+  const indicator = document.createElement("span");
+  indicator.className = "tabs__indicator";
+  indicator.setAttribute("aria-hidden", "true");
+  let animateSwitch = false; // só anima depois do primeiro desenho
+
+  function moveIndicator() {
+    const tab = tabs.find((t) => t.getAttribute("aria-selected") === "true");
+    if (!tab || !tabList.offsetWidth) return;
+    const box = tabList.getBoundingClientRect();
+    const r = tab.getBoundingClientRect();
+    const border = tabList.clientLeft; // the track's own border sits outside the inset box
+    indicator.style.setProperty("--t", `${r.top - box.top - border}px`);
+    indicator.style.setProperty("--l", `${r.left - box.left - border}px`);
+    indicator.style.setProperty("--r", `${box.right - r.right - border}px`);
+    indicator.style.setProperty("--b", `${box.bottom - r.bottom - border}px`);
+    indicator.style.backgroundColor = getComputedStyle(tab).getPropertyValue("--tone").trim();
+  }
+
+  if (tabList) {
+    // a cópia das etiquetas (a escuro) que viaja dentro do indicador
+    tabs.forEach((t) => { const s = document.createElement("span"); s.textContent = t.textContent; indicator.append(s); });
+    tabList.classList.add("has-indicator", "no-anim");
+    tabList.append(indicator);
+    // os tamanhos mudam quando as letras carregam ou o ecrã roda: reposiciona sem animar
+    new ResizeObserver(() => {
+      tabList.classList.add("no-anim");
+      moveIndicator();
+      requestAnimationFrame(() => tabList.classList.remove("no-anim"));
+    }).observe(tabList);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      tabList.classList.remove("no-anim");
+      animateSwitch = true;
+    }));
   }
 
   tabs.forEach((t, i) => {
