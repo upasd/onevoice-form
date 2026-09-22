@@ -209,6 +209,9 @@ img, svg { display: block; max-width: 100%; }
 .wordmark { display: grid; justify-items: center; gap: 3px; text-decoration: none; line-height: 1; }
 .wordmark__name { font: italic 900 1.4rem/1 var(--font-display); color: var(--ink); letter-spacing: -0.035em; }
 .wordmark__name b { color: var(--pink); font-weight: 900; }
+/* Figtree has no small-caps glyphs (no smcp feature), so they're built by hand:
+   capitals at 78% on the same baseline; O and V stay full size, as in the logo */
+.wordmark__name .sc { font-size: 0.78em; text-transform: uppercase; letter-spacing: -0.01em; }
 .wordmark__place { font: 600 0.7rem/1 var(--font-display); letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); }
 
 .nav { display: flex; align-items: center; gap: clamp(1.25rem, 2.6vw, 2.75rem); list-style: none; margin: 0; padding: 0; }
